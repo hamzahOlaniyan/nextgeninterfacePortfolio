@@ -5,7 +5,7 @@ import ProjectCard from "@/components/projectCard/ProjectCard";
 import MediaQuery from "@/components/utils/MediaQuery";
 import { ThemeBackground } from "@/components/utils/ThemeBackground";
 
-const page = () => {
+const Page = () => {
 
   const [tab, setTab] = useState<number>(0);
 
@@ -63,6 +63,4 @@ const page = () => {
   );
 };
 
-export default page;
-
-// md:gap-x-4 md:grid md:grid-cols-3 items-start justify-start gap-8 md:gap-y-24
+export default Page;
