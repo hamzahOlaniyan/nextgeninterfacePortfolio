@@ -24,12 +24,12 @@ const Hero = () => {
           <div className="relative w-full flex flex-col items-center justify-center pt-32 lg:pt-14">
             <div className="text-[clamp(1rem,11vw,17rem)] text-white font-mitr font-black uppercase w-full leading-[50px] md:leading-[70px] lg:leading-[130px]">
                   <div className="md:hidden text-center text-[3.5rem] sm:text-[5rem] relative sm:leading-[70px]">
-                    {/* <Image src={rec} alt='mac' width={50} height={50}  className="h-full w-full object-center object-contain block absolute left-0 top-0"/> */}
+                    {/* <Image src={rec} alt='mac' width={100} height={100} priority className="h-12 w-12 object-center object-contain block absolute left-0 top-0 z-10"/> */}
                     <h1 className="text-secondary">we craft</h1>
                     <h1>the</h1>
                     <h1 className="text-secondary">digital</h1>
                     <h1>experience</h1>
-                    {/* <Image src={black} alt='mac'  width={50} height={50} className="h-full w-full object-center object-contain block absolute right-0 top-0"/> */}
+                    {/* <Image src={black} alt='mac'  width={100} height={100} priority className="h-12 w-12 object-center object-contain block absolute right-0 top-0 z-10"/> */}
                   </div>
 
               <div className="hidden md:block">

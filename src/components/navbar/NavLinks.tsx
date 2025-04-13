@@ -22,7 +22,7 @@ export const NavLinks = ({ sideMenu, setSideMenu }: SideMenuType) => {
             {NavMenu.map((link: any, idx: number) => (
                 <div key={idx} className='group'>
                     <div className="">
-                        <button type='button' className={`${pathname === link?.url || pathname.startsWith(link.url + "/") ? "pointer-events-none text-secondary" : "text-white hover:text-secondary"} h-full gap-1 uppercase text-lg md:text-[13px] font-semibold relative flex items-center px-3 py-6`} onClick={() => {
+                        <button type='button' className={`${pathname === link?.url || pathname.startsWith(link.url + "/") ? "pointer-events-none text-secondary font-extrabold" : "text-white hover:text-secondary"} h-full gap-1 uppercase text-lg md:text-[13px] relative flex items-center px-3 py-6 transition-all`} onClick={() => {
                             if (link.dropdown) {
                                 setTitle(title !== link.title ? link.title : "");
                             } else {

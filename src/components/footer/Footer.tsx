@@ -18,18 +18,18 @@ const Footer = () => {
       <MediaQuery>
           <div className="md:grid grid-cols-3 md:grid-cols-3 gap-4 py-12">
             <div className="flex gap-2 mb-6 mb:mb-0">
-              <Image src={logo} alt='logo' className="w-8 h-8"/>
-              <h1 className="font-black text-2xl">Nextgen Interface</h1>
+              <Image src={logo} alt='logo' className="w-6 h-6 relative top-1"/>
+              <h1 className="text-2xl font-mitr">Nextgen Interface</h1>
             </div>
             <div className="">
-              <h1 className='uppercase text-lg font-medium'>quick links</h1>
+              <h1 className='uppercase text-lg font-bold'>quick links</h1>
               <div className="flex flex-col gap-3 my-3">
                 {NavMenu.map((item, idx: number) => (
                   <Link
                     key={item.title}
                     href={item.url}
-                    className={`${pathname === item.url || pathname.startsWith(item.url + "/") ? "font-bold" : ""
-                      } active:scale-95 uppercase text-sm hover:underline`}
+                    className={`${pathname === item.url || pathname.startsWith(item.url + "/") ? "font-black" : "font-medium"
+                      } active:scale-95 uppercase text-sm hover:underline `}
                   >
                     {item.title}
                   </Link>
@@ -37,14 +37,14 @@ const Footer = () => {
               </div>
             </div>
             <div className="">
-              <h1 className='uppercase text-lg font-medium'>Design And Development</h1>
+              <h1 className='uppercase text-lg font-bold'>Design And Development</h1>
               <div className="flex flex-col gap-3 my-3">
                 {NavMenu[1].dropdown?.map((item: any, idx: number) => (
                   <Link
                     key={item.title}
                     href={item.url}
                     className={`${pathname === item.url || pathname.startsWith(item.url + "/") ? "font-bold" : ""
-                      } active:scale-95 uppercase text-sm hover:underline`}
+                      } active:scale-95 uppercase text-sm hover:underline font-medium`}
                   >
                     {item.title}
                   </Link>

@@ -24,7 +24,7 @@ export const Solution = () => {
                           data-aos-easing="ease-in-out"
                          > 
                     </div> */}
-                    <div className="mx-auto md:mx-0">
+                    <div className="flex justify-center items-center bg-slate-500">
                         <Button link='/services' title='explore services' />
                     </div>
                 </div> 
