@@ -24,7 +24,9 @@ export const Solution = () => {
                           data-aos-easing="ease-in-out"
                          > 
                     </div> */}
+                    <div className="mx-auto md:mx-0">
                         <Button link='/services' title='explore services' />
+                    </div>
                 </div> 
             </div>
             </MediaQuery>
