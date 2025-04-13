@@ -49,7 +49,7 @@ const Hero = () => {
                   // data-aos-easing="ease-in-quad"
                   // data-aos-mirror="true"
                   // data-aos-once="false"
-                  className="w-full h-8 sm:h-12 md:h-16 lg:h-24 object-center object-cover block relative bg-teal-200 rounded-full"/>
+                  className="w-full h-8 sm:h-12 md:h-16 lg:h-[5.5rem] object-center object-cover block relative bg-teal-200 rounded-full"/>
               </div>
               <div className="flex gap-4 justify-between items-center ">
                 <Image src={laptop} alt='mac' width={100} height={100}
