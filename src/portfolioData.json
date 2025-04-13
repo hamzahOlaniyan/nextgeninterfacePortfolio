@@ -1,0 +1,388 @@
+{
+  "portfolio": [
+    {
+      "id": "12",
+      "name": "flights and packages",
+      "description": "Ongoing maintenance and enhancement of a dynamic flights and packages web application involved ensuring smooth platform performance through bug resolution, performance optimization, and the implementation of new features. Critical design changes were made to improve the user interface and overall user experience, keeping the web app visually appealing and functionally efficient across all devices. This work demonstrates strong expertise in maintaining and enhancing complex web applications while ensuring a modern and user-friendly design.",
+      "stack": [
+        "Next.Js",
+        "tailwind",
+        "Typescript",
+        "GraphQL",
+        "AWS",
+        "postgres",
+        "Jest",
+        "Sass"
+      ],
+      "image": [
+        "/images/Flights&packages/laptop.webp",
+        "/images/Flights&packages/tablet.webp",
+        "/images/Flights&packages/mobile.webp"
+      ],
+      "type": "web application",
+      "url": "https://ww2.flightsandpackages.com"
+    },
+    {
+      "id": "9",
+      "name": "Carmel Nigeria Limited",
+      "description": "Designed and developed a web application to streamline the purchasing process of water for users. The platform features user-friendly navigation, allowing customers to easily register, place orders, and track their purchases. Key functionalities include secure payment processing and real-time order updates, ensuring a reliable and efficient user experience. The application emphasizes a clean and intuitive design, enhancing usability and accessibility. This project exemplifies a dedication to leveraging technology to meet essential needs while providing a seamless online shopping experience.",
+      "stack": [
+        "React",
+        "Redux",
+        "Node.Js",
+        "Express.Js",
+        "Typescript",
+        "Postgres",
+        "Sass",
+        "Vitest",
+        "Material UI"
+      ],
+      "image": [
+        "/images/Carmel/tablet.webp",
+        "/images/Carmel/laptop.webp",
+        "/images/Carmel/mobile.webp",
+        "/images/Carmel/mobile-app.webp"
+      ],
+      "type": "web application",
+      "url": "https://carmelngwater.com"
+    },
+    {
+      "id": "9",
+      "name": "invoice app",
+      "description": "An intuitive invoicing web application designed to simplify the billing process for businesses and freelancers. The platform features light and dark mode options for enhanced user experience and allows users to create, edit, update, and delete invoices effortlessly. Key functionalities include filtering and sorting invoices, and expense tracking. The user interface prioritizes ease of use, enabling quick navigation and efficient invoice management. This project highlights a commitment to enhancing operational efficiency and streamlining financial processes for users.",
+      "stack": [
+        "React",
+        "Redux",
+        "Node.Js",
+        "Express.Js",
+        "Typescript",
+        "MongoDB",
+        "Sass"
+      ],
+      "image": [
+        "/images/InvoiceApp/tablet.webp",
+        "/images/InvoiceApp/lightmobile.webp",
+        "/images/InvoiceApp/darkmobile.webp"
+      ],
+      "type": "web application"
+    },
+    {
+      "id": "5",
+      "name": "jim gos",
+      "description": "An efficient task management mobile app designed and developed to streamline workflow and enhance productivity for Jimgo's workers. The app enables admin to create, edit, and delete tasks with ease, while general users can update task statuses and receive notifications when tasks are created or modified. Additionally, admins can generate invoices to be sent to customers for services rendered. Both admins and users can view lists of tasks and schedules, ensuring effective management and organization of responsibilities. This project underscores a commitment to improving collaboration and task oversight within teams.",
+      "stack": ["React Native", "Typescript", "Aws", "GraphQL"],
+      "image": [
+        "/images/Jimgos/mobile.webp",
+        "/images/Jimgos/app-screens.webp",
+        "/images/Jimgos/img3.webp"
+      ],
+      "type": "mobile application"
+    },
+    {
+      "id": "15",
+      "name": "kanban",
+      "description": "A dynamic Kanban board application designed to enhance productivity and provide clear oversight of ongoing tasks. Users can quickly add, assign, and arrange tasks within customizable columns, making it easy to monitor progress and manage priorities. With seamless drag-and-drop functionality, tasks move smoothly through stages, offering a transparent view of each project’s workflow. Ideal for individual use or team collaboration, this Kanban board is a practical tool for keeping projects organized and advancing toward completion.",
+      "stack": ["React", "Redux", "Typescript", "css"],
+      "image": [
+        "/images/Kanban/laptop.webp",
+        "/images/Kanban/twintablet.webp",
+        "/images/Kanban/11.webp",
+        "/images/Kanban/22.webp",
+        "/images/Kanban/33.webp",
+        "/images/Kanban/44.webp",
+        "/images/Kanban/55.webp",
+        "/images/Kanban/77.webp",
+        "/images/Kanban/88.webp",
+        "/images/Kanban/99.webp",
+        "/images/Kanban/001.webp",
+        "/images/Kanban/002.webp"
+      ],
+
+      "type": "web application"
+    },
+    {
+      "id": "1",
+      "name": "black wolf security",
+      "description": "An engaging website created to showcase Blackwolf Security, providing comprehensive information about the company and its services. The site features a user-friendly layout that highlights the various security solutions offered, including residential, commercial, and specialized services. Visitors can easily navigate through sections detailing the company's services, and expertise, ensuring a clear understanding of the security measures available. The design emphasizes professionalism and trust, aiming to instill confidence in potential clients seeking reliable security services. This project reflects a commitment to enhancing the online presence of Blackwolf Security and effectively communicating its offerings.",
+      "stack": ["html", "javscript", "sass", "css"],
+      "image": [
+        "/images/BlackWolfSecurity/desktop.webp",
+        "/images/BlackWolfSecurity/mobile.webp",
+        "/images/BlackWolfSecurity/full_screen.webp"
+      ],
+      "type": "website",
+      "url": "https://blackwolfsecurity.org/"
+    },
+
+    {
+      "id": "2",
+      "name": "Booking web app",
+      "description": "A dynamic web app developed and designed to facilitate seamless travel and holiday booking experiences. The platform allows users to book a variety of options, including resorts, beaches, hotels, and food services, catering to the needs of travelers seeking halal-friendly experiences. The user-friendly interface enables easy navigation and exploration of diverse travel packages, ensuring users can find the perfect getaway tailored to their preferences. Key features include detailed listings, user reviews, and secure payment options, making the booking process efficient and trustworthy. This project highlights a commitment to enhancing the travel experience for users by providing a comprehensive and accessible platform for planning their holidays.",
+      "stack": ["Next.Js", "Node.Js", "tailwind", "Typescript", "MongoDB"],
+      "image": [
+        "/images/BookingApp/img1.webp",
+        "/images/BookingApp/img3.webp",
+        "/images/BookingApp/img4.webp",
+        "/images/BookingApp/img5.webp",
+        "/images/BookingApp/img6.webp",
+        "/images/BookingApp/img7.webp",
+        "/images/BookingApp/img8.webp"
+      ],
+      "type": "web application"
+    },
+    {
+      "id": "8",
+      "name": "compass",
+      "description": "A user-friendly recipe management web app designed for creating, organizing, and viewing recipes. Users can effortlessly create recipes and view previously created ones, all within a streamlined interface. The app features robust filtering options, enabling users to search recipes by ingredients, cuisine, allergies, or preparation time, ensuring quick access to recipes.",
+      "stack": ["React", "Redux", "GraphQL", "Typescript", "Less", "aws"],
+      "image": [
+        "/images/Compass/img1.webp",
+        "/images/Compass/img2.webp",
+        "/images/Compass/img3.webp",
+        "/images/Compass/img4.webp",
+        "/images/Compass/img5.webp"
+      ],
+      "type": "web application"
+    },
+    {
+      "id": "9",
+      "name": "eccomerce",
+      "description": "A user-centric e-commerce web app designed to offer a seamless shopping experience for speakers, headphones, and earphones. The platform features a wide selection of audio products, allowing users to easily browse, and purchase their favorite items. Key functionalities include detailed product descriptions, adding products to cart and checking out, ensuring a reliable shopping experience. The responsive design caters to users on various devices, enhancing accessibility and convenience.",
+      "stack": [
+        "React",
+        "Redux",
+        "Sass",
+        "Typescript",
+        "Jest",
+        "React Testing Library"
+      ],
+      "image": [
+        "/images/Ecomerce/img1.webp",
+        "/images/Ecomerce/img2.webp",
+        "/images/Ecomerce/img3.webp",
+        "/images/Ecomerce/img4.webp",
+        "/images/Ecomerce/img5.webp",
+        "/images/Ecomerce/img6.webp",
+        "/images/Ecomerce/img7.webp",
+        "/images/Ecomerce/img8.webp",
+        "/images/Ecomerce/img9.webp"
+      ],
+      "type": "web application"
+    },
+
+    {
+      "id": "4",
+      "name": "inventory",
+      "description": "An intuitive invoicing management system designed to streamline the process of creating, managing, and tracking invoices. This platform enables users to effortlessly create, edit, and delete invoices, ensuring accurate billing and record-keeping. By prioritizing efficiency and usability, this project enhances the overall invoicing process, making it easier for businesses to manage their financial transactions.",
+      "stack": ["React", "Redux", "Typescript", "css"],
+      "image": ["/images/Inventory/img1.webp", "/images/Inventory/img2.webp"],
+      "type": "web application"
+    },
+    {
+      "id": "7",
+      "name": "tina pokuaah",
+      "description": "A professional website designed for Tina Pokuaah, specializing in international training and consultancy services. This platform effectively showcases the company’s expertise and offerings. The website features an intuitive layout, allowing users to navigate easily. With a focus on user experience, the design reflects the company’s commitment to delivering high-quality training and consultancy, making it easier for potential clients to engage and learn more about the available programs.",
+      "stack": ["html", "css", "javascript"],
+      "image": [
+        "/images/TinaPokuaah/img7.webp",
+        "/images/TinaPokuaah/img1.webp",
+        "/images/TinaPokuaah/img2.webp",
+        "/images/TinaPokuaah/img3.webp",
+        "/images/TinaPokuaah/img4.webp",
+        "/images/TinaPokuaah/img5.webp",
+        "/images/TinaPokuaah/img6.webp"
+      ],
+      "type": "website",
+      "url": "https://www.tinapokuaah.com/"
+    },
+
+    {
+      "id": "3",
+      "name": "elike k9",
+      "description": "A professional website designed for K9 Elite Worldwide, a professional dog training company committed to providing top-notch training services. This platform effectively highlights the company's expertise in dog training, featuring detailed information about various training programs, methodologies, and success stories. Users can easily navigate through the site to access resources, client testimonials, and contact details, ensuring a seamless experience. The website's design reflects the professionalism and passion behind K9 Elite Worldwide, making it a valuable resource for dog owners seeking expert training solutions for their pets.",
+      "stack": ["css", "javascript", "bootstrap", "html"],
+      "image": [
+        "/images/Elitek9/img7.webp",
+        "/images/Elitek9/img8.webp",
+        "/images/Elitek9/img1.webp",
+        "/images/Elitek9/img2.webp",
+        "/images/Elitek9/img3.webp",
+        "/images/Elitek9/img4.webp",
+        "/images/Elitek9/img5.webp",
+        "/images/Elitek9/img6.webp"
+      ],
+      "type": "website",
+      "url": "https://www.elitek9.org/"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/ali.webp"],
+      "type": "logo"
+    },
+    {
+      "id": "14",
+      "name": "big ego",
+      "image": ["/images/Design/bobs.webp"],
+      "type": "logo"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/dmx.webp"],
+      "type": "graphics"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/farm.webp"],
+      "type": "logo"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/heelz.webp"],
+      "type": "branding"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/tshirt.webp"],
+      "type": "t-shirt design"
+    },
+
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/real.webp"],
+      "type": "logo"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/teja.webp"],
+      "type": "illustration"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/tmg.webp"],
+      "type": "logo"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/thespot.webp"],
+      "type": "logo"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/iRemember-Apple.webp"],
+      "type": "graphics"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/ice-cream.webp"],
+      "type": "illustration"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/goodhealth.webp"],
+      "type": "graphics"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/triplet-motive-cover-art.webp"],
+      "type": "graphics"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/triplets-dashing-cover-art.webp"],
+      "type": "graphics"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/tripletz-lucky-charm-cover-art.webp"],
+      "type": "graphics"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/groganic.webp"],
+      "type": "branding"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/headphones.webp"],
+      "type": "illustration"
+    },
+    {
+      "id": "13",
+      "name": "graphics",
+      "image": ["/images/Design/tejac.webp"],
+      "type": "logo"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/platain-02.webp"],
+      "type": "branding"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/adsract.webp"],
+      "type": "t-shirt design"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/soSaucy.webp"],
+      "type": "t-shirt design"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/Queens_Head.webp"],
+      "type": "t-shirt design"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/messi.webp"],
+      "type": "t-shirt design"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/narcos.webp"],
+      "type": "graphics"
+    },
+
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/oni.webp"],
+      "type": "t-shirt design"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/ad.webp"],
+      "type": "branding"
+    },
+    {
+      "id": "13",
+      "name": "ali",
+      "image": ["/images/Design/bigego.webp"],
+      "type": "logo"
+    }
+  ]
+}
