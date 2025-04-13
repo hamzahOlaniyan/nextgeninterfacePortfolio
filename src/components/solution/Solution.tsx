@@ -17,14 +17,14 @@ export const Solution = () => {
                 </div>
                 <div className="h-full lg:w-1/2 space-y-2 flex flex-col  justify-end items-start relative">
                     <p className='text-white text-right mb-2'>We transform innovative ideas into capitivating and memoriable digital experience that engage and inspire</p>
-                    <div className='absolute -bottom-20 right-0'
+                    {/* <div className='absolute -bottom-20 right-0'
                          data-aos='fade-left'
                           data-aos-offset='300'
                           data-aos-duration="500"
                           data-aos-easing="ease-in-out"
                          > 
+                    </div> */}
                         <Button link='/services' title='explore services' />
-                    </div>
                 </div> 
             </div>
             </MediaQuery>
