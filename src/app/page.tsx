@@ -7,7 +7,7 @@ import { Banner } from "@/components/banner/Banner";
 export default function Home() {
   return (
       <div className="">
-        <div className="bg-primary pb-6">
+        <div className="bg-themeColor pb-6">
           <Hero />
           <Solution />
           <LandingGallery/>

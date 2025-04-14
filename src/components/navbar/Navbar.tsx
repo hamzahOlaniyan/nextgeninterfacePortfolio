@@ -14,12 +14,12 @@ const Navbar = () => {
   const [sideMenu, setSideMenu] = useState(false);
 
   return (
-    <nav className={`fixed py-5 w-full top-0 lg:py-0 z-50 bg-themeColor shadow-md shadow-black/10`}>
+    <nav className={`fixed py-4 w-full top-0 lg:py-0 z-50 bg-themeColor shadow-md shadow-black/10`}>
       <MediaQuery>
       <div className="w-full flex justify-between items-center h-full relative">
         <Link href='/' className="flex gap-2 items-center ">
-          <Image src={logo} alt='logo' priority className="w-6" />
-          <h1 className="text-white font-mitr text-2xl uppercase">Nextgen Interface</h1>
+          <Image src={logo} alt='logo' priority className="w-5 sm:w-6" />
+          <h1 className="text-white font-semibold font-mitr text-md sm:text-xl uppercase">Nextgen Interface</h1>
         </Link>
         <div className="hidden md:block"> <NavLinks /></div>
         <div className="md:hidden">

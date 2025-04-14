@@ -54,7 +54,7 @@ export default function Page({ params }: { params: { title: string } }) {
                                             <p className="text-lg font-medium">{i.help?.sub}</p>
                                             <ul>
                                                 {i.help?.list?.map((item: [], idx: number) => (
-                                                    <li key={idx} className='flex gap-2 items-center text-4 font-bold'><FaCircleDot className="text-blue text-md" />
+                                                    <li key={idx} className='flex gap-2 items-center text-4 font-bold'><FaCircleDot className="text-dirtyOrange text-md" />
                                                         {item}</li>
                                                 ))}
                                             </ul>

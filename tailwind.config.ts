@@ -53,16 +53,27 @@ const config: Config = {
         mitr:["var(--font-mitr)"]
       },
       colors: {
-        primary: "#a11940",
-        secondary: '#ffc4c4',
+        themeColor:'#023047',
+        secondary: '#118ab2',
         blue:'#0d3150',
-        label:'#FF736C',
-        panel1:'#d1b7fe',
-        panel2:'#0d3150',
-        themeColor:'#a11940',
+        label:'#ffb703',
+        panel1:'#8ecae6',
+        panel2:'#ff5d13',
         logoColor:'#ff5d13',
-        dirtyOrange:'#ed8c2a'
+        dirtyOrange:'#06d6a0',
+        oneOff:'#edf2f4'
       },
+      // colors: {
+      //   primary: "#a11940",
+      //   secondary: '#ffc4c4',
+      //   blue:'#0d3150',
+      //   label:'#FF736C',
+      //   panel1:'#d1b7fe',
+      //   panel2:'#0d3150',
+      //   themeColor:'#a11940',
+      //   logoColor:'#ff5d13',
+      //   dirtyOrange:'#ed8c2a'
+      // },
     },
   },
   plugins: [require("tailwind-scrollbar")],

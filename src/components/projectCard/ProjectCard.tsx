@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: { project: any }) => {
       data-aos-duration="400"
       className="group w-full relative cursor-pointer"
     >
-      <div className="w-full h-96 relative">
+      <div className="w-full h-60 relative">
         <Suspense fallback={<LoadingPlaceholder />}>
           <div className="w-full h-full absolute top-0 left-0 z-10 rounded-lg hover:bg-secondary/60 hover:opacity-40 duration-400"></div>
           <ImageWithSuspense
@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         </Suspense>
       </div>
         <div className="bg-secondary/15 rounded-b-lg p-2">
-          <h1 className="text-xl text-white font-bold uppercase text-center">{name}</h1>
+          <h1 className="text-lg font-medium text-white capitalize text-center">{name}</h1>
         </div>
     </Link>
   );

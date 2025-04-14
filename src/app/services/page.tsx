@@ -25,7 +25,7 @@ const page = () => {
                                 <p>{item.description_2}</p>
                                 <ul className='my-16'>
                                     {item.list.map((l: string, i: number) => (
-                                        <li key={i} className='flex w-full gap-2 text-lg items-center font-bold'><FaCircleDot className="text-secondary" />{l}</li>
+                                        <li key={i} className='flex w-full gap-2 text-lg items-center font-bold'><FaCircleDot className="text-white" />{l}</li>
                                     ))}
                                 </ul>
                             </article>

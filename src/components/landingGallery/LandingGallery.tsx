@@ -26,12 +26,12 @@ export const LandingGallery = () => {
                             data-aos-offset='240'
                             data-aos-duration='500'
                             data-aos-easing='ease'
-                            className=" text-[3.5rem] leading-[3rem] font-mitr uppercase font-black text-blue ">
+                            className=" text-[3.5rem] leading-[3.5rem] font-mitr uppercase font-black text-dirtyOrange ">
                             explore our projects
                             </h1>
                     </div>
                     <div className="flex gap-6 items-center">
-                        <Link href='/service' className="text-white font-semibold text-lg hover:underline animate-pulse">See Portfolio </Link>
+                        <Link href='/portfolio' className="text-white font-semibold text-lg hover:underline animate-pulse">See Portfolio </Link>
                         <HiArrowLongRight className='text-white'/>
                     </div>
                 </div>
