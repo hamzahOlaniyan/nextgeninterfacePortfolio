@@ -1,19 +1,19 @@
-import Hero from "../components/hero/Hero";
+import Hero from "../components/Hero";
 import Panel from "@/components/panel/Panel";
-import { Solution } from "@/components/solution/Solution";
-import { LandingGallery } from "@/components/landingGallery/LandingGallery";
-import { Banner } from "@/components/banner/Banner";
+import { Show } from "@/components/Show";
+import { ProjectSection } from "@/components/ProjectSection";
+import { Banner } from "@/components/Banner";
 
 export default function Home() {
-  return (
+   return (
       <div className="">
-        <div className="bg-themeColor pb-6">
-          <Hero />
-          <Solution />
-          <LandingGallery/>
-        </div>
-          <Panel />
-          <Banner/>
-        </div>
-  );
+         <div className="bg-themeColor pb-6">
+            <Hero />
+            <Show />
+            <ProjectSection />
+         </div>
+         <Panel />
+         <Banner />
+      </div>
+   );
 }
