@@ -24,7 +24,7 @@ const page = () => {
             </p>
          </ThemeBackground>
          <MediaQuery>
-            <div className="mb-24 w-2/3 mx-auto">
+            <div className="mb-12 sm:mb-24 w-full sm:w-2/3 mx-auto">
                <TechStack />
             </div>
             <div className="pb-20 ">

@@ -90,7 +90,7 @@ const TechStack = () => {
    ];
 
    return (
-      <div className="overflow-hidden w-full bg-white rounded-full">
+      <div className="overflow-hidden p-2 sm:p-0 w-full bg-white rounded-full">
          <div className="flex animate-slide-loop gap-6 w-[500%]">
             <div className="flex gap-6">
                {[...stacks, ...stacks].map((stack, i) => (
