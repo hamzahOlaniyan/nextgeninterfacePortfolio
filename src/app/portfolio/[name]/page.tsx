@@ -20,14 +20,14 @@ const page = ({ params }: { params: { name: string } }) => {
       <div className="relative mt-[76px]">
          <ProjectHeader project={project} />
          <MediaQuery>
-            <div className="w-full flex flex-col items-center relative lg:gap-y-8 mt-12">
+            <div className="w-full flex flex-col items-center gap-2 relative lg:gap-y-8 mt-12">
                {project?.image?.map((pics: any, i: number) => (
-                  <div key={i} className="w-full h-[90vh] relative">
+                  <div key={i} className="w-full h-[35vh] sm:h-[90vh] relative">
                      <Image
                         src={pics}
                         alt="project"
                         fill={true}
-                        className="object-contain object-center w-full h-full rounded-md"
+                        className="object-cover sm:object-contain object-center w-full h-full rounded-md"
                      />
                   </div>
                ))}
