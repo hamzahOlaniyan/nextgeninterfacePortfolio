@@ -27,10 +27,60 @@ const Hero = () => {
                         priority
                         className="h-40 w-40 object-center object-contain block absolute left-0 top-0 -z-10"
                      /> */}
-                     <h1 className="text-secondary">we craft</h1>
-                     <h1>the</h1>
-                     <h1 className="text-secondary">digital</h1>
-                     <h1>experience</h1>
+                     <motion.h1
+                        initial={{ opacity: 0, scale: 0.95, x: -40 }}
+                        animate={{ opacity: 1, scale: 1, x: 0 }}
+                        transition={{
+                           type: "spring",
+                           duration: 1,
+                           ease: "easeIn",
+                           bounce: "0.5",
+                        }}
+                        className="text-secondary"
+                     >
+                        we craft
+                     </motion.h1>
+                     <motion.h1
+                        initial={{ opacity: 0, scale: 0.95, x: -40 }}
+                        animate={{ opacity: 1, scale: 1, x: 0 }}
+                        transition={{
+                           type: "spring",
+                           duration: 1,
+                           ease: "easeIn",
+                           bounce: "0.5",
+                        }}
+                     >
+                        the
+                     </motion.h1>
+                     <motion.h1
+                        initial={{ opacity: 0, scale: 0.85, y: 40, x: -50 }}
+                        animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
+                        transition={{
+                           type: "spring",
+                           duration: 0.5,
+                           delay: 0.2,
+                           ease: "easeOut",
+                           visualDuration: 0.3,
+                           bounce: 0.3,
+                        }}
+                        className="text-secondary"
+                     >
+                        digital
+                     </motion.h1>
+                     <motion.h1
+                        initial={{ opacity: 0, scale: 0.85, y: 40, x: -50 }}
+                        animate={{ opacity: 1, scale: 1, y: 0, x: 0 }}
+                        transition={{
+                           type: "spring",
+                           duration: 0.5,
+                           delay: 0.2,
+                           ease: "easeOut",
+                           visualDuration: 0.3,
+                           bounce: 0.3,
+                        }}
+                     >
+                        experience
+                     </motion.h1>
                      {/* <Image
                         src={black}
                         alt="mac"
@@ -228,7 +278,7 @@ const Hero = () => {
                   </div>
                </div>
             </div>
-            {/* <ParticlesComponent className="-z-[200] h-[20vh]" /> */}
+            <ParticlesComponent className="-z-[200] h-[20vh]" />
          </div>
       </MediaQuery>
    );
