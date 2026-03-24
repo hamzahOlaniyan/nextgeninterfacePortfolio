@@ -1,15 +1,41 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const navItems = [
-   { label: "Work", href: "#work" },
+   { label: "Work", href: "/#work" },
    { label: "About", href: "#about" },
    { label: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
    const [isOpen, setIsOpen] = useState(false);
+   const navigate = useNavigate();
+   const location = useLocation();
+
+   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+      if (href.startsWith("/#")) {
+         e.preventDefault();
+         const targetId = href.split("#")[1];
+         if (location.pathname !== "/") {
+            navigate("/");
+            // Wait for navigation and then scroll
+            setTimeout(() => {
+               const element = document.getElementById(targetId);
+               if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+               }
+            }, 100);
+         } else {
+            const element = document.getElementById(targetId);
+            if (element) {
+               element.scrollIntoView({ behavior: "smooth" });
+            }
+         }
+         setIsOpen(false);
+      }
+   };
 
    return (
       <motion.nav
@@ -22,9 +48,9 @@ const Navbar = () => {
             <div className="flex items-center gap-2">
                <img src="/logo.webp" alt="logo" className="w-5 object-contain" />
 
-               <a href="#" className="font-display text-xl font-bold tracking-tight text-foreground">
+               <Link to="/" className="font-display text-xl font-bold tracking-tight text-foreground">
                   nextgen<span className="gradient-text"> interface</span>
-               </a>
+               </Link>
             </div>
 
             {/* Desktop nav */}
@@ -33,17 +59,12 @@ const Navbar = () => {
                   <a
                      key={item.label}
                      href={item.href}
+                     onClick={(e) => handleNavClick(e, item.href)}
                      className="text-sm font-medium text-muted-foreground transition-colors duration-300 hover:text-foreground"
                   >
                      {item.label}
                   </a>
                ))}
-               {/* <a
-                  href="#contact"
-                  className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:shadow-[0_0_20px_hsl(175_85%_50%/0.4)]"
-               >
-                  Let's Talk
-               </a> */}
             </div>
 
             {/* Mobile toggle */}
@@ -67,7 +88,7 @@ const Navbar = () => {
                         <a
                            key={item.label}
                            href={item.href}
-                           onClick={() => setIsOpen(false)}
+                           onClick={(e) => handleNavClick(e, item.href)}
                            className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary"
                         >
                            {item.label}

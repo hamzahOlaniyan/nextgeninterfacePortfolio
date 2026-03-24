@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+   html {
+      scroll-behavior: smooth;
+   }
+
    :root {
       --background: 220 0% 8%;
       --foreground: 180 10% 92%;
@@ -19,10 +23,10 @@
       --primary-foreground: 220 20% 4%;
 
       --secondary: 220 0% 14%;
-      --secondary-foreground: 180 10% 80%;
+      --secondary-foreground: 33 10% 80%;
 
       --muted: 220 12% 12%;
-      --muted-foreground: 220 0% 50%;
+      --muted-foreground: 220 0% 60%;
 
       --accent: 175 85% 50%;
       --accent-foreground: 220 20% 4%;

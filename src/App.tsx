@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import ProjectDetail from "./pages/ProjectDetail.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Index from "./pages/index.tsx";
+import Navbar from "./components/Navbar.tsx";
 
 const queryClient = new QueryClient();
 
@@ -15,6 +16,8 @@ const App = () => (
          {/* <Toaster /> */}
          <Sonner />
          <BrowserRouter>
+            <Navbar />
+
             <Routes>
                <Route path="/" element={<Index />} />
                <Route path="/project/:slug" element={<ProjectDetail />} />
