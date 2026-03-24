@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   :root {
+      --background: 220 0% 8%;
+      --foreground: 180 10% 92%;
+
+      --card: 220 0% 6.5%;
+      --card-foreground: 180 10% 92%;
+
+      --popover: 220 18% 8%;
+      --popover-foreground: 180 10% 92%;
+
+      --primary: 20 88% 54%;
+      --primary-foreground: 220 20% 4%;
+
+      --secondary: 220 0% 14%;
+      --secondary-foreground: 180 10% 80%;
+
+      --muted: 220 12% 12%;
+      --muted-foreground: 220 0% 50%;
+
+      --accent: 175 85% 50%;
+      --accent-foreground: 220 20% 4%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 220 0% 16%;
+      --input: 220 15% 16%;
+      --ring: 175 85% 50%;
+
+      --radius: 0.75rem;
+
+      --font-display: "Space Grotesk", sans-serif;
+      --font-body: "Inter", sans-serif;
+
+      --gradient-glow: linear-gradient(135deg, hsl(18 88% 54%), hsl(33 93% 44%));
+      --shadow-glow: 0 0 40px -10px hsl(18 88% 54% / 0.4);
+      --shadow-card: 0 8px 32px -8px hsl(0 0% 0% / 0.5);
+
+      --sidebar-background: 220 18% 6%;
+      --sidebar-foreground: 180 10% 80%;
+      --sidebar-primary: 175 85% 50%;
+      --sidebar-primary-foreground: 220 20% 4%;
+      --sidebar-accent: 220 15% 14%;
+      --sidebar-accent-foreground: 180 10% 80%;
+      --sidebar-border: 220 15% 16%;
+      --sidebar-ring: 175 85% 50%;
+   }
+}
+
+@layer base {
+   * {
+      @apply border-border;
+   }
+
+   body {
+      @apply bg-background text-foreground;
+      font-family: var(--font-body);
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      font-family: var(--font-display);
+   }
+}
+
+@layer utilities {
+   .text-glow {
+      text-shadow: 0 0 30px hsl(33 85% 50% / 0.5);
+   }
+
+   .border-glow {
+      box-shadow: var(--shadow-glow);
+   }
+
+   .gradient-text {
+      background: var(--gradient-glow);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+   }
+
+   .glass-card {
+      background: var(--background);
+      backdrop-filter: blur(20px);
+      border: 1px solid hsl(220 15% 20% / 0.5);
+   }
+}
