@@ -19,6 +19,7 @@ export interface Project {
    tech: string[];
    description: string;
    caseStudy: CaseStudy;
+   gallery?: string[];
 }
 
 export const projects: Project[] = [
@@ -34,11 +35,19 @@ export const projects: Project[] = [
          duration: "4 Months",
          year: "2023",
          client: "RealEstate Plus",
-         overview: "A comprehensive real estate platform designed to simplify the property search process for users and agents alike.",
-         challenge: "Users were struggling with disjointed search experiences and lack of visual context when browsing properties remotely.",
-         solution: "We implemented an integrated map search with real-time updates and seamless 3D virtual tour embeds.",
-         results: ["50% increase in user engagement", "30% more leads generated", "Reduced average time-to-view by 40%"],
+         overview:
+            "A comprehensive real estate platform designed to simplify the property search process for users and agents alike.",
+         challenge:
+            "Users were struggling with disjointed search experiences and lack of visual context when browsing properties remotely.",
+         solution:
+            "We implemented an integrated map search with real-time updates and seamless 3D virtual tour embeds.",
+         results: [
+            "50% increase in user engagement",
+            "30% more leads generated",
+            "Reduced average time-to-view by 40%",
+         ],
       },
+      gallery: ["/project-1.jpg", "/project-2.jpg", "/project-3.jpg"],
    },
    {
       slug: "mmt",
@@ -73,7 +82,11 @@ export const projects: Project[] = [
          overview: "A complete brand redesign and digital experience for a modern wellness startup.",
          challenge: "The brand lacked a cohesive identity and failed to resonate with a younger, tech-savvy audience.",
          solution: "A vibrant new visual identity paired with a clean, intuitive mobile-first web experience.",
-         results: ["New brand guidelines established", "100% positive feedback on beta launch", "Successfully secured seed funding"],
+         results: [
+            "New brand guidelines established",
+            "100% positive feedback on beta launch",
+            "Successfully secured seed funding",
+         ],
       },
    },
 ];
