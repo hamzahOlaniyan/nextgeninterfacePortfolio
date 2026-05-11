@@ -54,17 +54,25 @@ const Navbar = () => {
             </div>
 
             {/* Desktop nav */}
-            <div className="hidden md:flex items-center gap-8">
-               {navItems.map((item) => (
+            <div className="hidden md:flex items-center gap-10">
+               {navItems.map((item, i) => (
                   <a
                      key={item.label}
                      href={item.href}
-                     onClick={(e) => handleNavClick(e, item.href)}
-                     className="text-sm font-medium text-muted-foreground transition-colors duration-300 hover:text-foreground"
+                     className="group flex items-center gap-2 text-sm text-foreground transition-opacity hover:opacity-60"
                   >
+                     <span className="text-[10px] tabular-nums text-muted-foreground">0{i + 1}</span>
                      {item.label}
                   </a>
                ))}
+               <a
+                  href="948859595959"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-foreground border-b !border-emerald-600 pb-0.5 hover:opacity-60 transition-opacity !text-emerald-600"
+               >
+                  WhatsApp ↗
+               </a>
             </div>
 
             {/* Mobile toggle */}
