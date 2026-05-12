@@ -20,9 +20,9 @@ const ProjectShowcase = ({ header = true }: { header?: boolean }) => {
 
    return (
       <section id="work" className=" max-w-6xl mx-auto pb-24">
-         <div className="mx-auto">
+         <div className="mx-auto px-4 md:px-0">
             {header && (
-               <div className="py-12">
+               <div className="py-12 space-y-8 md:space-y-0">
                   <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground text-left">
                      Selected Work
                   </div>
@@ -31,7 +31,7 @@ const ProjectShowcase = ({ header = true }: { header?: boolean }) => {
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
                      transition={{ duration: 0.6 }}
-                     className="mb-12 text-center"
+                     className="text-center"
                   >
                      <p className="text-sm font-display uppercase tracking-[0.3em] text-primary mb-4">
                         Selected Projects

@@ -41,7 +41,7 @@ const Hero = () => {
                   className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
                >
                   <a
-                     href="#work"
+                     href="/projects"
                      className="bg-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:shadow-[0_0_30px_hsl(33_85%_50%/0.5)] hover:scale-105"
                   >
                      View Our Work
@@ -67,7 +67,7 @@ const Hero = () => {
                      <div className="h-2 w-1 rounded-full bg-primary" />
                   </motion.div>
                </motion.div>
-               <div className="mx-auto">
+               <div className="mx-auto px-4 md:px-0">
                   <motion.div
                      initial={{ opacity: 0, y: 10 }}
                      animate={{ opacity: 1, y: 0 }}
@@ -75,18 +75,26 @@ const Hero = () => {
                      className="grid grid-cols-1 md:grid-cols-[1fr_2fr_1fr] gap-4 border-t border-b border-border py-8 "
                   >
                      <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground text-left">About</div>
-                     <p className="text-left text-base text-foreground leading-relaxed">
-                        A small team of three full-stack developers and a designer building considered digital products
-                        for ambitious brands.
-                     </p>
-                     <div className="text-right">
-                        <a
-                           href="#work"
-                           className="text-sm text-foreground border-b border-foreground pb-0.5 hover:opacity-60 transition-opacity"
-                        >
-                           Selected work ↓
-                        </a>
+                     <div className="space-y-3">
+                        <p className="text-left text-base text-foreground leading-relaxed">
+                           A small team of three full-stack developers and a designer building considered digital
+                           products for ambitious brands.
+                        </p>
+                        <div className="text-left">
+                           <a
+                              href="#work"
+                              className="text-sm text-foreground border-b border-foreground pb-0.5 hover:opacity-60 transition-opacity"
+                           >
+                              Selected work ↓
+                           </a>
+                        </div>
                      </div>
+                     <a
+                        href="/studio"
+                        className="border border-border h-fit px-8 py-3.5 text-sm font-semibold text-foreground transition-all duration-300 hover:border-primary hover:text-primary"
+                     >
+                        Read more
+                     </a>
                   </motion.div>
                </div>
             </div>

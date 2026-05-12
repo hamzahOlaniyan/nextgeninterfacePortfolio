@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { whatsapp } from "./Footer";
 
 const navItems = [
    { label: "index", href: "/" },
@@ -58,14 +59,14 @@ const Navbar = () => {
                   <a
                      key={item.label}
                      href={item.href}
-                     className="group flex items-center gap-2 text-sm text-foreground transition-opacity hover:opacity-60"
+                     className="group flex items-center gap-2 text-sm text-foreground transition-opacity hover:opacity-60 capitalize"
                   >
                      <span className="text-[10px] tabular-nums text-muted-foreground">0{i + 1}</span>
                      {item.label}
                   </a>
                ))}
                <a
-                  href="948859595959"
+                  href={whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-foreground border-b !border-emerald-600 pb-0.5 hover:opacity-60 transition-opacity !text-emerald-600"
@@ -91,22 +92,24 @@ const Navbar = () => {
                   className="md:hidden overflow-hidden border-t border-border"
                >
                   <div className="flex flex-col gap-4 px-6 py-6">
-                     {navItems.map((item) => (
+                     {navItems.map((item, i) => (
                         <a
                            key={item.label}
                            href={item.href}
                            onClick={(e) => handleNavClick(e, item.href)}
-                           className="text-lg font-medium text-muted-foreground transition-colors hover:text-primary"
+                           className="text-3xl transition-colors hover:text-primary flex items-start gap-2 capitalize "
                         >
+                           <span className="text-sm tabular-nums text-muted-foreground">0{i + 1}</span>
                            {item.label}
                         </a>
                      ))}
                      <a
-                        href="#contact"
-                        onClick={() => setIsOpen(false)}
-                        className="mt-2 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground"
+                        href={whatsapp}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-2xl text-foreground pb-0.5 hover:opacity-60 transition-opacity !text-emerald-600"
                      >
-                        Let's Talk
+                        WhatsApp ↗
                      </a>
                   </div>
                </motion.div>

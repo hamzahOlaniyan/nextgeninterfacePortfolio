@@ -38,7 +38,7 @@ const ProjectDetail = () => {
    return (
       <div className="min-h-screen bg-background">
          {/* Hero */}
-         <section className="relative pt-20">
+         <section className="relative">
             <div className="container mx-auto px-6 py-12">
                <motion.button
                   initial={{ opacity: 0, x: -20 }}
@@ -62,9 +62,7 @@ const ProjectDetail = () => {
                         <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary mb-3">
                            {project.subcategory}
                         </p>
-                        <h1 className="font-display text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl mb-6">
-                           {project.title}
-                        </h1>
+                        <h1 className="text-4xl text-foreground sm:text-5xl lg:text-6xl mb-6">{project.title}</h1>
                         <p className="text-lg text-secondary-foreground leading-relaxed mb-8">{project.description}</p>
                         <div className="space-y-6">
                            <div className="space-y-2">
@@ -211,7 +209,8 @@ const ProjectDetail = () => {
                         <ul className="flex flex-wrap gap-x-2">
                            {project.tech.map((t, idx) => (
                               <li key={t} className="text-muted-foreground capitalize">
-                                 {t}{idx < project.tech.length - 1 ? "," : ""}
+                                 {t}
+                                 {idx < project.tech.length - 1 ? "," : ""}
                               </li>
                            ))}
                         </ul>
@@ -232,8 +231,6 @@ const ProjectDetail = () => {
                </div>
             </div>
          </section>
-
-         <Footer />
       </div>
    );
 };

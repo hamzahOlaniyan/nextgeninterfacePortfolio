@@ -5,7 +5,7 @@ import React from "react";
 export default function Projects() {
    return (
       <main className="pt-12 max-w-6xl mx-auto">
-         <div className="grid md:grid-cols-12">
+         <div className="grid md:grid-cols-12 pb-12">
             <div className="md:col-span-4 text-xs uppercase tracking-[0.25em] text-muted-foreground">
                Index — Projects
             </div>
