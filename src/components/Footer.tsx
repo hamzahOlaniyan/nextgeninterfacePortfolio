@@ -1,35 +1,52 @@
 import { motion } from "framer-motion";
 import { Mail, ArrowUpRight } from "lucide-react";
 
+export const email = "nextgeninterface@gmail.com";
 const Footer = () => {
    return (
-      <footer id="contact" className="border-t border-border bg-card">
+      <footer id="contact" className="border-t border-border bg-card ">
          {/* CTA Section */}
-         <div className="container mx-auto px-6 py-24 lg:py-32 text-center">
+         <div className="mx-auto py-24 lg:py-16 text-center max-w-6xl">
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground text-left">Get in touch</div>
             <motion.div
-               initial={{ opacity: 0, y: 30 }}
+               initial={{ opacity: 0, y: 20 }}
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
-               transition={{ duration: 0.7 }}
+               transition={{ duration: 0.6 }}
+               className=""
             >
-               <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary mb-4">Ready to start?</p>
-               <h2 className="font-display text-4xl font-bold text-foreground sm:text-5xl lg:text-6xl mb-6">
-                  Let's build something
-                  <br />
-                  <span className="gradient-text">extraordinary</span>
-               </h2>
-               <p className="mx-auto max-w-md text-muted-foreground mb-10">
-                  Whether it's a new product, a redesign, or a complex web app — we're ready to bring your vision to
-                  life.
-               </p>
-               <a
-                  href="mailto:hello@nextgeninterface.com"
-                  className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:shadow-[0_0_30px_hsl(33_85%_44%/0.5)] hover:scale-105"
-               >
-                  <Mail size={18} />
-                  hello@nextgeninterface.com
-                  <ArrowUpRight size={16} />
-               </a>
+               <div className="">
+                  <h2 className="font-display text-5xl sm:text-6xl lg:text-7xl tracking-tight text-foreground leading-[1]">
+                     Have a project
+                     <br />
+                     in mind? <span className="italic text-muted-foreground gradient-text">Let's talk.</span>
+                  </h2>
+
+                  <p className="mx-auto max-w-md text-muted-foreground mt-8">
+                     Whether it's a new product, a redesign, or a complex web app — we're ready to bring your vision to
+                     life.
+                  </p>
+
+                  <div className="mt-12 grid sm:grid-cols-2 gap-8  mx-auto">
+                     <a
+                        href={"23r2323er23"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group block border-t border-border pt-4"
+                     >
+                        <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">WhatsApp</p>
+                        <p className="font-display text-2xl text-foreground group-hover:italic transition-all">
+                           Message us ↗
+                        </p>
+                     </a>
+                     <a href={`mailto:${email}`} className="group block border-t border-border pt-4">
+                        <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Email</p>
+                        <p className="font-display text-2xl text-foreground group-hover:italic transition-all break-all">
+                           {email} ↗
+                        </p>
+                     </a>
+                  </div>
+               </div>
             </motion.div>
          </div>
 

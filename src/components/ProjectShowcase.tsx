@@ -12,52 +12,57 @@ const filters: { label: string; value: Filter }[] = [
    { label: "Design", value: "design" },
 ];
 
-const ProjectShowcase = () => {
+const ProjectShowcase = ({ header = true }: { header?: boolean }) => {
    const [active, setActive] = useState<Filter>("all");
    const navigate = useNavigate();
 
    const filtered = active === "all" ? projects : projects.filter((p) => p.category === active);
 
    return (
-      <section id="work" className="py-24 lg:py-32">
-         <div className="container mx-auto px-6">
-            {/* Header */}
-            <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.6 }}
-               className="mb-12 text-center"
-            >
-               <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary mb-4">Selected Projects</p>
-               <h2 className="font-display text-4xl font-bold text-foreground sm:text-5xl">Our Latest Work</h2>
-            </motion.div>
+      <section id="work" className=" max-w-6xl mx-auto pb-24">
+         <div className="mx-auto">
+            {header && (
+               <div className="py-12">
+                  <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground text-left">
+                     Selected Work
+                  </div>
+                  <motion.div
+                     initial={{ opacity: 0, y: 20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     viewport={{ once: true }}
+                     transition={{ duration: 0.6 }}
+                     className="mb-12 text-center"
+                  >
+                     <p className="text-sm font-display uppercase tracking-[0.3em] text-primary mb-4">
+                        Selected Projects
+                     </p>
+                     <h2 className="text-4xl text-foreground sm:text-5xl">
+                        A quiet archive of <br /> <span className="text-muted-foreground italic">recent projects.</span>
+                     </h2>
+                  </motion.div>
+               </div>
+            )}
 
             {/* Filter tabs */}
-            <motion.div
-               initial={{ opacity: 0, y: 10 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.4, delay: 0.2 }}
-               className="mb-12 flex justify-center gap-2"
-            >
+            <div className="flex items-center gap-6 border-y border-border py-4 mb-2">
                {filters.map((f) => (
                   <button
                      key={f.value}
                      onClick={() => setActive(f.value)}
-                     className={`rounded-full px-6 py-2.5 text-sm font-medium transition-all duration-300 ${
-                        active === f.value
-                           ? "bg-primary text-primary-foreground shadow-[0_0_20px_hsl(33_93%_44%/0.3)]"
-                           : "border-border text-secondary-foreground hover:bg-secondary/80"
+                     className={`text-sm transition-opacity ${
+                        active === f.value ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                      }`}
                   >
                      {f.label}
+                     <span className="ml-1 text-[10px] tabular-nums text-muted-foreground">
+                        ({f.value === "all" ? projects.length : projects.filter((p) => p.category === f.value).length})
+                     </span>
                   </button>
                ))}
-            </motion.div>
+            </div>
 
             {/* Grid */}
-            <motion.div layout className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <motion.div layout className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
                {filtered.map((project, i) => (
                   <motion.div
                      key={project.slug}

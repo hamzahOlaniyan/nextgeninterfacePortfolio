@@ -4,8 +4,9 @@ import { Menu, X } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const navItems = [
-   { label: "Work", href: "/#work" },
-   { label: "About", href: "#about" },
+   { label: "index", href: "/" },
+   { label: "Projects", href: "/projects" },
+   { label: "Studio", href: "/studio" },
    { label: "Contact", href: "#contact" },
 ];
 
@@ -20,7 +21,6 @@ const Navbar = () => {
          const targetId = href.split("#")[1];
          if (location.pathname !== "/") {
             navigate("/");
-            // Wait for navigation and then scroll
             setTimeout(() => {
                const element = document.getElementById(targetId);
                if (element) {
@@ -42,12 +42,11 @@ const Navbar = () => {
          initial={{ y: -20, opacity: 0 }}
          animate={{ y: 0, opacity: 1 }}
          transition={{ duration: 0.6, ease: "easeOut" }}
-         className="fixed top-0 left-0 right-0 z-50 glass-card"
+         className="sticky top-0 left-0 right-0 z-50 glass-card"
       >
-         <div className="container mx-auto flex items-center justify-between px-6 py-4">
+         <div className="mx-auto flex items-center justify-between max-w-6xl px-4 md:px-0 py-4">
             <div className="flex items-center gap-2">
                <img src="/logo.webp" alt="logo" className="w-5 object-contain" />
-
                <Link to="/" className="font-display text-xl font-bold tracking-tight text-foreground">
                   nextgen<span className="gradient-text"> interface</span>
                </Link>
